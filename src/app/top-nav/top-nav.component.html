@@ -1,0 +1,15 @@
+<div class="Navbar">
+    <div class="Navbar__Link">
+       <a href="#"><img src="../../assets/images/logo.svg" alt=""></a>
+     </div>
+     <div class="Navbar__Link Navbar__Link-toggle">
+       <a (click)="showMyContainer = !showMyContainer"><img src="../../assets/images/topNav.svg"></a>
+     </div>
+   <nav class="Navbar__Items Navbar__Items--right" [ngClass]=" showMyContainer ? 'Navbar__ToggleShow' : ''">
+      <a  class="Navbar__Link" href="#">Blogs</a>
+      <a class="Navbar__Link" href="#">Features</a>
+      <a class="Navbar__Link" href="#">Pricing</a>
+      <a class="Navbar__Link" href="#">Integrations</a>
+      <Button class="Navbar__Link Navbar__Link__Button" href="#">Start trail</Button>
+   </nav>
+ </div>

@@ -1,0 +1,73 @@
+.Navbar {
+    background-color: #e5f1f9;
+    display: flex;
+    padding: 12px 120px;
+    font-family: sans-serif;
+    color: white;
+    border-bottom: 1px solid var(--300, #CBD5E1);
+    align-items: center;
+  }
+  
+  .Navbar__Link {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.48px;
+    color: #64748B;
+    padding: 0px 20px;
+    text-decoration: none;
+  }
+
+  .Navbar__Link__Button:hover {
+    box-shadow: rgba(#1353DD, 0.5) 0px 0px 20px 0px;
+  }
+
+  .Navbar__Link__Button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(130deg, #1353DD, #1393DD), linear-gradient(131.69deg, #2D56EC 164.87%, #1AACEA 66.91%);
+    color: white;
+    border: none;
+    padding: 12px 20px 12px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  
+  .Navbar__Items {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Navbar__Items--right {
+    margin-left:auto;
+  }
+  
+  .Navbar__Link-toggle {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .Navbar__Items,
+    .Navbar {
+      flex-direction: column;
+    }
+      
+  .Navbar__Items {
+      display:none;
+    }
+      
+  .Navbar__Items--right {
+      margin-left:0;
+    }
+      
+  .Navbar__ToggleShow {
+      display: flex;
+    }
+      
+  .Navbar__Link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+     } 
+  }

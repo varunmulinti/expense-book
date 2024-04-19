@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0px;
+    background: linear-gradient(0deg, var(--100, #F1F5F9), var(--100, #F1F5F9)),
+                linear-gradient(182.42deg, #E3F0F9 2.03%, #F8FAFC 17.33%, #F1F5F9 62.04%);
+    font-family: 'Inter', Fallback, sans-serif !important;
+
+}
+  @font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter.ttc') format('opentype');
+  }
