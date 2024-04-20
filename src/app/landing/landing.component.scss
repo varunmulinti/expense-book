@@ -32,7 +32,8 @@ background-clip: text;
 -webkit-text-fill-color: transparent; 
 -webkit-background-clip: text;
 }
-p {
+.section__one {
+  p {
     color: #64748B;
     font-family: 'Inter';
 font-size: 20px;
@@ -52,6 +53,8 @@ color: #1AACEA;
 border-bottom: 2px solid;
  }
 }
+}
+
 .main__container{
     padding: 0px 120px;
 }
@@ -117,7 +120,7 @@ $animationSpeed: 40s;
 }
 
 
-// Styling
+// Slider Styling
 .slider {
 	background: white;
 	height: 176px;
@@ -130,14 +133,14 @@ $animationSpeed: 40s;
   margin-bottom: 80px;
   h4 {
     font-family: 'Inter';
-font-size: 16px;
-font-weight: 400;
-line-height: 20.48px;
-letter-spacing: 0.24em;
-text-align: center;
-color: #94A3B8;
-margin-top: 32px;
-margin-bottom: 36px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.48px;
+    letter-spacing: 0.24em;
+    text-align: center;
+    color: #94A3B8;
+    margin-top: 32px;
+    margin-bottom: 36px;
   }
 
 	
@@ -173,4 +176,53 @@ margin-bottom: 36px;
 		width: 108px;
     margin-right: 70px;
 	}
+}
+
+// card styles
+
+.card__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 82px;
+
+  .card {
+    width: 32%;
+    flex-grow: 1;
+    margin-bottom: 48px;
+    .card-header {
+      display: flex;
+      align-items: center;
+      h5 {
+        font-family: 'Inter';
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25.2px;
+        color: #475569;
+        margin: 0px;
+      }
+      .img-div {
+        position: relative;
+        margin-right: 5.5px;
+        .img {
+          position: absolute;
+          top: 7px;
+          left: 7px;
+        }
+      }
+    }
+    .card-body {
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 23.68px;
+      text-align: left;
+      color: #64748B;
+      padding-right: 22px;
+      p {
+        margin: 0px;
+      }
+    }
+  }
+  
 }
