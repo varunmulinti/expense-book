@@ -1,11 +1,12 @@
 .Navbar {
-    background-color: #e5f1f9;
+    background-color: transparent;
     display: flex;
     padding: 12px 120px;
     font-family: sans-serif;
     color: white;
     border-bottom: 1px solid var(--300, #CBD5E1);
     align-items: center;
+    margin-bottom: 56px;
   }
   
   .Navbar__Link {
@@ -16,6 +17,9 @@
     color: #64748B;
     padding: 0px 20px;
     text-decoration: none;
+    &.navbar__link__logo{
+      padding: 0px;
+    }
   }
 
   .Navbar__Link__Button:hover {
@@ -25,12 +29,13 @@
   .Navbar__Link__Button {
     cursor: pointer;
     transition: all 0.3s ease;
-    background: linear-gradient(130deg, #1353DD, #1393DD), linear-gradient(131.69deg, #2D56EC 164.87%, #1AACEA 66.91%);
     color: white;
     border: none;
     padding: 12px 20px 12px 20px;
     border-radius: 4px;
     font-weight: 600;
+    background: linear-gradient(93.69deg, #2D56EC -14.13%, #1AACEA 120.91%);
+
   }
   
   .Navbar__Items {
